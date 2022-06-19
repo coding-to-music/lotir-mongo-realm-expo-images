@@ -1,24 +1,26 @@
-exports = async  function(changeEvent) {
-  const { Expo } = require('expo-server-sdk')
+exports = async function (changeEvent) {
+  const { Expo } = require("expo-server-sdk");
   let expo = new Expo({ accessToken: context.values.get("expoKey") });
-  let message = []
-  if (changeEvent.fullDocument.platform ==="website") {
-    const query = {"syncID": changeEvent.fullDocument.id };
+  let message = [];
+  if (changeEvent.fullDocument.platform === "website") {
+    const query = { syncID: changeEvent.fullDocument.id };
     const mongodb = context.services.get("mongodb-atlas");
-    const itemsCollection = mongodb.db("store").collection("token");
-    const {token} = await itemsCollection.findOne(query)
+    const itemsCollection = mongodb
+      .db("lotir-mongo-realm-expo-images")
+      .collection("token");
+    const { token } = await itemsCollection.findOne(query);
     message.push({
-    to: token,
-    title:"New message from computer",
-    subtitle: changeEvent.fullDocument.platform.title,
-    data: {id: changeEvent.fullDocument.platform.id },
-    })
+      to: token,
+      title: "New message from computer",
+      subtitle: changeEvent.fullDocument.platform.title,
+      data: { id: changeEvent.fullDocument.platform.id },
+    });
     await expo.sendPushNotificationsAsync(message);
-    return {token}
+    return { token };
   } else {
-    return 
+    return;
   }
-  
+
   /*
     A Database Trigger will always call a function with a changeEvent.
     Documentation on ChangeEvents: https://docs.mongodb.com/manual/reference/change-events/
