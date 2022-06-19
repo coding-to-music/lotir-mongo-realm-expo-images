@@ -4,6 +4,11 @@
   "description": "![Header](https://raw.githubusercontent.com/julien040/lotir/master/assets/Github%20header.png)",
   "main": "index.js",
   "scripts": {
+    "dev": "cd website && next dev",
+    "build": "cd website && next build",
+    "start": "cd website && next start",
+    "lint": "cd website && next lint",
+    "export": "cd website && next build && next export",
     "test": "echo \"Error: no test specified\" && exit 1",
     "vercel": "npm run deploy && vercel --prod",
     "mongohost": "npm run deploy && npm run build && cp -a ./build/ ./hosting/files && realm-cli push --remote=tasktracker-bmumi --include-hosting",
