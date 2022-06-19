@@ -22,6 +22,8 @@ https://dev.to/julien41/lotir-share-link-and-images-between-your-phone-and-your-
 
 https://lotir.ml
 
+https://api.imgbb.com/
+
 https://github.com/julien040/lotir/releases
 
 ![](https://raw.githubusercontent.com/julien040/lotir/master/assets/Architecture%20Scheme.png)
