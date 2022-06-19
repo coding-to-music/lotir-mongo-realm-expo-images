@@ -1,6 +1,8 @@
 {
     "config_version": 20210101,
-    "name": "lotir-mongo-realm-expo-images",
+    "app_id": "y-nvvml",
+    "name": "y",
     "location": "US-VA",
-    "deployment_model": "GLOBAL"
+    "deployment_model": "GLOBAL",
+    "environment": "production"
 }
