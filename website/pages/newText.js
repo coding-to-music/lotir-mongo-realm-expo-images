@@ -35,7 +35,7 @@ export default function NewTest() {
   }, []);
   async function handleSave() {
     const key = window.localStorage.getItem("key");
-    const app = Realm.getApp("application-0-mzgor");
+    const app = Realm.getApp("lotir-mongo-realm-expo-images-cetxm");
     await app.currentUser.functions
       .addMessage("website", key, Title, Body)
       .catch((err) => {

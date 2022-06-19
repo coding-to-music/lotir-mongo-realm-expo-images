@@ -37,7 +37,7 @@ export default function NewImage() {
 
   async function handleSave() {
     const key = window.localStorage.getItem("key");
-    const app = Realm.getApp("application-0-mzgor");
+    const app = Realm.getApp("lotir-mongo-realm-expo-images-cetxm");
     if (imageRef.current.files.length === 0) {
       toast({
         status: "error",

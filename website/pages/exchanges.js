@@ -30,7 +30,7 @@ export default function Exchanges() {
       router.push("/settings");
     }
     (async () => {
-      const app = Realm.getApp("application-0-mzgor");
+      const app = Realm.getApp("lotir-mongo-realm-expo-images-cetxm");
       const result = await app.currentUser.functions.getMessages(key);
       setExchanges(result);
     })();
@@ -139,7 +139,6 @@ const SingleItem = ({ platform, title, body }) => {
           overflow={"hidden"}
           whiteSpace={"pre-wrap"}
           textOverflow={"ellipsis"}
-          
         >
           {body}
         </Text>

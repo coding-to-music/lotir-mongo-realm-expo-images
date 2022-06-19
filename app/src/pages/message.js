@@ -23,7 +23,7 @@ export default function Message() {
     (async () => {
       const key = await AsyncStorage.getItem("key");
       if (key) {
-        const app = Realm.App.getApp("application-0-mzgor");
+        const app = Realm.App.getApp("lotir-mongo-realm-expo-images-cetxm");
         const messages = await app.currentUser.functions.getMessages(key);
         setData(messages);
       }
@@ -58,9 +58,12 @@ export default function Message() {
           )}
           ListEmptyComponent={() => (
             <Flex height={400} align={"center"} justify={"center"} flex={1}>
-              <Heading marginBottom={2} color={"app.700"}>Loading...</Heading>
-              <Text marginBottom={4} textAlign={"center"} >
-                If this takes too long, please check your internet connection or create your first share
+              <Heading marginBottom={2} color={"app.700"}>
+                Loading...
+              </Heading>
+              <Text marginBottom={4} textAlign={"center"}>
+                If this takes too long, please check your internet connection or
+                create your first share
               </Text>
               <Spinner marginTop={4} size={36} color={"app.700"} />
             </Flex>

@@ -18,7 +18,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 export default function TextComponent() {
   const toast = useToast();
   const navigation = useNavigation();
-  const app = Realm.App.getApp("application-0-mzgor");
+  const app = Realm.App.getApp("lotir-mongo-realm-expo-images-cetxm");
   const [Title, setTitle] = useState("");
   const [Content, setContent] = useState("");
 
