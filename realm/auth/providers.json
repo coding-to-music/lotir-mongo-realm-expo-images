@@ -16,7 +16,7 @@
       "autoConfirm": true,
       "resetFunctionName": "resetFunc",
       "runConfirmationFunction": false,
-      "runResetFunction": true
+      "runResetFunction": false
     },
     "disabled": false
   }
