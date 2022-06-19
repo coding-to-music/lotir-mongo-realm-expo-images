@@ -29,7 +29,37 @@ https://github.com/julien040/lotir/releases
 ## Environment variables:
 
 ```java
-..
+const { Expo } = require("expo-server-sdk");
+let expo = new Expo({ accessToken: context.values.get("expoKey") });
+
+realm/realm_config.json
+{
+    "config_version": 20210101,
+    "app_id": "lotir-mongo-realm-expo-images-cetxm",
+    "name": "lotir-mongo-realm-expo-images",
+    "location": "US-VA",
+    "deployment_model": "GLOBAL",
+    "environment": "production"
+}
+
+realm/values/expoKey.json
+{
+    "name": "expoKey",
+    "value": "expo",
+    "from_secret": true
+}
+
+realm/data_sources/mongodb-atlas/config.json
+{
+    "name": "mongodb-atlas",
+    "type": "mongodb-atlas",
+    "config": {
+      "clusterName": "Cluster0",
+      "readPreference": "primary",
+      "wireProtocolEnabled": false
+    }
+  }
+
 ```
 
 ## GitHub
