@@ -74,6 +74,33 @@ git remote add origin git@github.com:coding-to-music/lotir-mongo-realm-expo-imag
 git push -u origin main
 ```
 
+## Errors when attempting to deploy on Vercel
+
+```java
+info  - Generating static pages (7/7)
+info  - Finalizing page optimization...
+Page                                       Size     First Load JS
+┌ ○ /                                      3.03 kB         339 kB
+├   /_app                                  0 B             336 kB
+├ ○ /404                                   194 B           336 kB
+├ ○ /exchanges                             2.35 kB         374 kB
+├ ○ /newImage                              1.41 kB         376 kB
+├ ○ /newText                               1.71 kB         377 kB
+└ ○ /settings                              1.09 kB         376 kB
++ First Load JS shared by all              336 kB
+  ├ chunks/framework-91d7f78b5b4003c8.js   42 kB
+  ├ chunks/main-deb592798b94b511.js        28.2 kB
+  ├ chunks/pages/_app-b57532d2952e9a23.js  264 kB
+  ├ chunks/webpack-378e68e29c265886.js     886 B
+  └ css/011333d5658df96f.css               971 B
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+Error! The file "/vercel/path0/.next/routes-manifest.json" couldn't be found. This is normally caused by a misconfiguration in your project.
+Please check the following, and reach out to support if you cannot resolve the problem:
+  1. If present, be sure your `build` script in "package.json" calls `next build`.  2. Navigate to your project's settings in the Vercel dashboard, and verify that the "Build Command" is not overridden, or that it calls `next build`.  3. Navigate to your project's settings in the Vercel dashboard, and verify that the "Output Directory" is not overridden. Note that `next export` does **not** require you change this setting, even if you customize the `next export` output directory.
+Learn More: https://err.sh/vercel/vercel/now-next-routes-manifest
+Error: Command "vercel build" exited with 1
+```
+
 # Lotir
 
 ![Header](https://raw.githubusercontent.com/julien040/lotir/master/assets/Github%20header.png)
