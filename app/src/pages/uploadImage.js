@@ -22,7 +22,7 @@ export default function ImageComponent() {
   const navigation = useNavigation();
   const [Cancelled, setCancelled] = useState(true);
   const [Title, setTitle] = useState("");
-  const app = Realm.App.getApp("lotir-mongo-realm-expo-images-cetxm");
+  const app = Realm.App.getApp("lotir-mongo-realm-expo-images-qhlli");
   async function pickAnImage() {
     /* If title is empty, break the function and show a toast */
     if (Title.length === 0) {

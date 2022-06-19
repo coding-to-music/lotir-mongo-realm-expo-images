@@ -23,7 +23,7 @@ export default function Message() {
     (async () => {
       const key = await AsyncStorage.getItem("key");
       if (key) {
-        const app = Realm.App.getApp("lotir-mongo-realm-expo-images-cetxm");
+        const app = Realm.App.getApp("lotir-mongo-realm-expo-images-qhlli");
         const messages = await app.currentUser.functions.getMessages(key);
         setData(messages);
       }

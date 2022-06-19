@@ -28,7 +28,7 @@ import Theme from "../theme/index";
 import * as Realm from "realm-web";
 
 function MyApp({ Component, pageProps }) {
-  const app = new Realm.App({ id: "lotir-mongo-realm-expo-images-cetxm" });
+  const app = new Realm.App({ id: "lotir-mongo-realm-expo-images-qhlli" });
   const credentials = Realm.Credentials.anonymous();
   app.logIn(credentials);
   return (

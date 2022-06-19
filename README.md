@@ -36,7 +36,7 @@ let expo = new Expo({ accessToken: context.values.get("expoKey") });
 realm/realm_config.json
 {
     "config_version": 20210101,
-    "app_id": "lotir-mongo-realm-expo-images-cetxm",
+    "app_id": "lotir-mongo-realm-expo-images-qhlli",
     "name": "lotir-mongo-realm-expo-images",
     "location": "US-VA",
     "deployment_model": "GLOBAL",

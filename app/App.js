@@ -117,7 +117,7 @@ export default function App() {
         );
         await Notification.requestPermissionsAsync({});
       }
-      app = new Realm.App({ id: "lotir-mongo-realm-expo-images-cetxm" });
+      app = new Realm.App({ id: "lotir-mongo-realm-expo-images-qhlli" });
       const credentials = Realm.Credentials.anonymous();
       await app.logIn(credentials);
       const { data } = await Notification.getExpoPushTokenAsync({

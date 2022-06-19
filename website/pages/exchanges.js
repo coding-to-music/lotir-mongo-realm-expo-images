@@ -30,7 +30,7 @@ export default function Exchanges() {
       router.push("/settings");
     }
     (async () => {
-      const app = Realm.getApp("lotir-mongo-realm-expo-images-cetxm");
+      const app = Realm.getApp("lotir-mongo-realm-expo-images-qhlli");
       const result = await app.currentUser.functions.getMessages(key);
       setExchanges(result);
     })();
