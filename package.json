@@ -10,7 +10,7 @@
     "lint": "cd website && next lint",
     "export": "cd website && next build && next export",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "vercel": "npm run deploy && vercel --prod",
+    "vercel": "npm run deploy && cd website && vercel --prod",
     "mongohost": "npm run deploy && npm run build && cp -a ./build/ ./hosting/files && realm-cli push --remote=tasktracker-bmumi --include-hosting",
     "deploy": "git add . && git commit -m Build && git push",
     "realm:init": "npm run deploy && cd ./realm && realm-cli app init",
