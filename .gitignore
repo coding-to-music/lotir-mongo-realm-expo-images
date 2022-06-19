@@ -1,1 +1,8 @@
 google-services.json
+
+.env
+
+desktop/node_modules
+app/node_modules
+website/node_modules
+

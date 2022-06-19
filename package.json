@@ -1,0 +1,24 @@
+{
+  "name": "lotir-mongo-realm-expo-images",
+  "version": "1.0.0",
+  "description": "![Header](https://raw.githubusercontent.com/julien040/lotir/master/assets/Github%20header.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vercel": "npm run deploy && vercel --prod",
+    "mongohost": "npm run deploy && npm run build && cp -a ./build/ ./hosting/files && realm-cli push --remote=tasktracker-bmumi --include-hosting",
+    "deploy": "git add . && git commit -m Build && git push",
+    "realm:init": "npm run deploy && cd ./realm && realm-cli app init",
+    "deploy:backend": "npm run deploy && cd ./realm && realm-cli push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julien040/lotir.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julien040/lotir/issues"
+  },
+  "homepage": "https://github.com/julien040/lotir#readme"
+}

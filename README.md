@@ -1,3 +1,49 @@
+# lotir-mongo-realm-expo-images
+
+Share anything between your
+
+phone and your computer
+
+Have you ever wanted to share a file, or some text between your phone and your computer ?
+
+Lotir is a simple way to share content between your devices.
+
+# 🚀 Javascript full-stack 🚀
+
+https://github.com/coding-to-music/lotir-mongo-realm-expo-images
+
+https://lotir-mongo-realm-expo-images.vercel.app
+
+From / By https://github.com/julien040/lotir
+
+https://github.com/julien040/lotir
+
+https://dev.to/julien41/lotir-share-link-and-images-between-your-phone-and-your-computer-5d36
+
+https://lotir.ml
+
+https://github.com/julien040/lotir/releases
+
+![](https://raw.githubusercontent.com/julien040/lotir/master/assets/Architecture%20Scheme.png)
+
+## Environment variables:
+
+```java
+
+```
+
+## GitHub
+
+```java
+git init
+git add .
+git remote remove origin
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coding-to-music/lotir-mongo-realm-expo-images.git
+git push -u origin main
+```
+
 # Lotir
 
 ![Header](https://raw.githubusercontent.com/julien040/lotir/master/assets/Github%20header.png)
