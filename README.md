@@ -29,7 +29,7 @@ https://github.com/julien040/lotir/releases
 ## Environment variables:
 
 ```java
-
+.
 ```
 
 ## GitHub
