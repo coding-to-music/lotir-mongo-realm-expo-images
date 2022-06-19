@@ -29,7 +29,6 @@ https://github.com/julien040/lotir/releases
 ## Environment variables:
 
 ```java
-
 const { Expo } = require("expo-server-sdk");
 let expo = new Expo({ accessToken: context.values.get("expoKey") });
 
